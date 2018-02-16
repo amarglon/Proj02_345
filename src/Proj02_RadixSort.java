@@ -14,12 +14,12 @@ public class Proj02_RadixSort {
 	}
 	
 	private static void sort (Proj02_DataPair[] vals, boolean debug) {
-		Proj02_CountingSort.sort(vals, 0);
-		Proj02_CountingSort.sort(vals, 1);
-		Proj02_CountingSort.sort(vals, 2);
-		Proj02_CountingSort.sort(vals, 3);
-		Proj02_CountingSort.sort(vals, 4);
-		Proj02_CountingSort.sort(vals, 5);
+		for (int i = 1; i < 6; i++){
+                     if (debug){
+                         System.out.printf("--- RADIX SORT pos=%d ---", i);		//roll radix banner pos=i
+                }
+                     Proj02_CountingSort.sort(vals, i, debug);   
+        }
 	}
 
 }
