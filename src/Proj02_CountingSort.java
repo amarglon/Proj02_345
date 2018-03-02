@@ -53,10 +53,6 @@ public class Proj02_CountingSort {
 		 vals[i] = tempArray[i];
 		 
 	 }
-	   // for (int i = 0; i < vals.length; i++) {
-	   // 	System.out.println(tempArray[i].key);
-	   //      vals[i] = tempArray[i];
-	   // }
 	}
 	
 	private static int getKey(int i, int pos) {
